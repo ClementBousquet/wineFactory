@@ -63,6 +63,6 @@ public class WineException extends RuntimeException {
     }
 
     public String toString() {
-        return "EkkoException(errorCodeEnum=" + this.getErrorCode() + ", technicalMessage=" + this.getTechnicalMessage() + ", publicMessage=" + this.getPublicMessage() + ", httpStatus=" + this.getHttpStatus() + ", log=" + this.isLog() + ")";
+        return "WineException(errorCodeEnum=" + this.getErrorCode() + ", technicalMessage=" + this.getTechnicalMessage() + ", publicMessage=" + this.getPublicMessage() + ", httpStatus=" + this.getHttpStatus() + ", log=" + this.isLog() + ")";
     }
 }
