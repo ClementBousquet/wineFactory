@@ -1,0 +1,15 @@
+<configuration>
+    <property name="pattern"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS Z} [%.20thread] %-5level %logger{15} - %X{dd.trace_id:-0} %X{dd.span_id:-0} - %msg%n"/>
+    <appender name="stdout"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <springProfile name="local">
+            <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                <pattern>${pattern}</pattern>
+            </encoder>
+        </springProfile>
+    </appender>
+    <root level="info">
+        <appender-ref ref="stdout"/>
+    </root>
+</configuration>

@@ -1,0 +1,10 @@
+spring:
+  flyway:
+    enabled: false
+    baseline-on-migrate: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/wine
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    migrationLocation: classpath:db/migration/common
