@@ -26,6 +26,10 @@ Energie vin
 - use VM options `--add-opens java.base/java.lang=ALL-UNNAMED` to use proxy beans in spring configuration classes
 - use profile `local`
 
+# Conception files
+
+- Class schema (src/main/resources/wines.jpg)
+
 # Enhancement proposal
 
 - Security strategy
